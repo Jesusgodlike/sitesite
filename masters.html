@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Салон Красоты</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('anime.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+            margin-bottom: 100px; /* Добавленный стиль */
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Высота логотипа */
+            width: auto; /* Автоматическое определение ширины */
+        }
+
+        .navbar-brand {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-nav .nav-item a {
+            width: 100%;
+            display: block;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+        }
+
+        .footer img {
+            height: 50px;
+            width: auto;
+        }
+
+        .master {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .master img {
+            width: 200px; /* Задаем фиксированную ширину */
+            height: 200px; /* Задаем фиксированную высоту */
+            object-fit: cover; /* Заполняем прямоугольник изображением с сохранением пропорций */
+            border-radius: 50%; /* Закругляем углы для создания круглых изображений */
+            border: 5px solid #fff; /* Добавляем рамку вокруг изображения */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень */
+        }
+
+        .master h3,
+        .master p {
+            margin-top: 10px;
+            margin-bottom: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="Логотип"></a>
+        <span class="navbar-text ml-auto">+7 777 777 777</span>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="srs2.html">О салоне</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="uslugi.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/register.php">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/login.php">Авторизация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mesto.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4" id="masters">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Наши мастера</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="master">
+                            <img src="https://www.salonsecret.ru/media/setka_editor/post/11601_739_472_.jpg" alt="Мастер 1">
+                            <h3>Алена Сергеевна</h3>
+                            <p>Опыт 5 лет</p>                                         
+                            <p>Новый специалист</p>
+                            <p>Специализация: Стрижка</p>
+                            <p>Образование: Курсы парикмахера</p>
+                            <p>Сертификаты: Сертифицированный мастер по маникюру</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="master">
+                            <img src="https://kolobok.ua/i/12/03/83/2/1203832/image_main/1895f3c39ff1dd61865c6dfd2992883a-quality_70Xresize_crop_1Xallow_enlarge_0Xw_698Xh_465.jpg" alt="Мастер 2">
+                            <h3>Лиза Ларина</h3>
+                            <p>Новый специалист</p>
+                            <p>Специализация: Маникюр и педикюр</p>
+                            <p>Образование: Курсы маникюра и педикюра</p>
+                            <p>Сертификаты: Сертифицированный мастер по маникюру</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="logo.png" alt="Логотип">
+        <span>+7 777 777 777</span>
+        <p>KAZAKHSTAN</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+

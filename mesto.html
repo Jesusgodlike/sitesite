@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Салон Красоты</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            background-image: url('anime.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+            margin-bottom: 100px; /* Добавленный стиль */
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Высота логотипа */
+            width: auto; /* Автоматическое определение ширины */
+        }
+
+        .navbar-brand {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-nav .nav-item a {
+            width: 100%;
+            display: block;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+        }
+
+        .footer img {
+            height: 50px;
+            width: auto;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+
+        #youtube-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="Логотип"></a>
+        <span class="navbar-text ml-auto">+7 777 777 777</span>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="srs2.html">О салоне</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="uslugi.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="masters.html">Мастера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/register.php">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/login.php">Авторизация</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4" id="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: мамыр 4</p>
+        <p>Номера телефонов: +777 777 777, +666 666 666</p>
+        <p>Почта: Eden@gmail.com</p>
+        <div id="map"></div>
+    </div>
+
+
+    <div class="footer">
+        <img src="logo.png" alt="Логотип">
+        <span>+7 777 777 777</span>
+        <p>KAZAKHSTAN</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.5104, -0.1175], 15); // Координаты Big Ben
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+        L.marker([51.5104, -0.1175]).addTo(map)
+            .bindPopup('Big Ben, London')
+            .openPopup();
+    </script>
+</body>
+
+</html>
+
+

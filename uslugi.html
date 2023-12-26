@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Салон Красоты</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('anime.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+            margin-bottom: 100px; /* Добавленный стиль */
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Высота логотипа */
+            width: auto; /* Автоматическое определение ширины */
+        }
+
+        .navbar-brand {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-nav .nav-item a {
+            width: 100%;
+            display: block;
+        }
+        
+        
+        .service-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background-color: #333333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .service-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        
+.footer {
+                background-color: #333333;
+            color: #ffffff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+        .footer img {
+            height: 50px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="Логотип"></a>
+        <span class="navbar-text ml-auto">+7 777 777 777</span>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="srs2.html">О салоне</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="masters.html">Мастера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/register.php">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/login.php">Авторизация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mesto.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+    <div class="container service-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://arasan-spa.kz/wp-content/uploads/Beauty-Studio-Arasan2.jpg" alt="Услуга 1">
+                    <h3>Стрижки / укладки</h3>
+                    <p>Женские стрижки классические, креативные на любой вкус и длину волос. Мастера высокого класса с внушительным опытом воплотят в жизнь любые идеи в лучшем виде.</p>
+                    <button class="btn btn-primary" onclick="orderService('Стрижки / укладки')">Заказать</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://arasan-spa.kz/wp-content/uploads/vpva.jpg" alt="Услуга 2">
+                    <h3>Услуги колориста</h3>
+                    <p>Женские стрижки классические, креативные на любой вкус и длину волос. Мастера высокого класса с внушительным опытом воплотят в жизнь любые идеи в лучшем виде.</p>
+                    <button class="btn btn-primary" onclick="orderService('Услуги колориста')">Заказать</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://arasan-spa.kz/wp-content/uploads/Manicure-pedicure-Arasan.jpg" alt="Услуга 3">
+                    <h3>Уход за руками</h3>
+                    <p>Процедура удаления кутикулы, обработки ногтевой пластины, выравнивания поверхности ногтя, с помощью аппарата и различных насадок. Финальный уход</p>
+                    <button class="btn btn-primary" onclick="orderService('Уход за руками')">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    <div class="footer">
+        <img src="logo.png" alt="Логотип">
+        <span>+7 777 777 777</span>
+        <p>KAZAKHSTAN</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+
+    <script>
+        function orderService(serviceName) {
+            alert("Ваш заказ на услугу \"" + serviceName + "\" принят. Мы свяжемся с вами в ближайшее время!");
+        }
+    </script>
+</body>
+
+</html>
+
