@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Салон Красоты</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <style>
+        body {
+            background-image: url('anime.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+            margin-bottom: 100px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
+
+        .navbar-brand {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        .navbar-text {
+            color: #ffffff;
+        }
+
+        .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar-nav .nav-item a {
+            width: 100%;
+            display: block;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            padding: 20px 0;
+        }
+
+        .footer img {
+            height: 50px;
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-inner img {
+                width: 100%;
+            }
+        }
+
+        .carousel-inner img {
+            border-radius: 10px; /* Добавлено закругление углов для изображений в карусели */
+        }
+
+        .container h2 {
+            color: #333333; /* Цвет заголовка */
+        }
+
+        .container p {
+            font-size: 1.2em;
+        }
+
+        .container img {
+            border-radius: 5px; /* Закругление углов для изображений в блоке "Наш салон" */
+            margin-bottom: 20px;
+        }
+
+        .container mt-4 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="Логотип"></a>
+        <span class="navbar-text ml-auto">+7 777 777 777</span>
+    </nav>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">О салоне</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="uslugi.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="masters.html">Мастера</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/register.php">Регистрация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/test/login.php">Авторизация</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mesto.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.playground.ru/p/N8BbOu5tV_flZKw3faJYSw.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.playground.ru/p/SDKQQLLYAKmasVN04MOzIQ.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.playground.ru/p/7FPq7o3g3uPLeUTLQ5L5ow.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container mt-4" id="about">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Наш салон</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://lh6.googleusercontent.com/VQHiKJeRa-yC00IXWGpiNo6iNlL2C23kzprZ-NuZUwG7INe3HZLrNTbUxJbY0FKmKV_0D789UlW422YfNq1yqv95rJV6R0gWs75pcaPBeOevCaxmof98N53tutVeC94sEFc5_f0oJlyZWL3IvA" alt="Салон 1" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://cdn.businessmens.ru/loaded/content/b63ba314f1bd911f62911e38e6fc2855.webp" alt="Салон 2" class="img-fluid">
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <p>Добро пожаловать в салон красоты "Eden"! Мы создаем волшебство красоты, раскрывая ваш потенциал во всей красе. Наши профессиональные мастера и современные технологии помогут вам почувствовать себя особенными. Откройте для себя новый уровень ухода за собой в атмосфере роскоши и комфорта. Приходите к нам и доверьте свою красоту в надежные руки!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="logo.png" alt="Логотип">
+        <span>+7 777 777 777</span>
+        <p>KAZAKHSTAN</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
